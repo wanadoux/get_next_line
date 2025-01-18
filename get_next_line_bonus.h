@@ -1,21 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cboma-ya <cboma-ya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/28 04:51:20 by cboma-ya          #+#    #+#             */
-/*   Updated: 2024/08/15 14:08:06 by cboma-ya         ###   ########.fr       */
+/*   Created: 2024/08/15 14:09:40 by cboma-ya          #+#    #+#             */
+/*   Updated: 2024/08/15 14:11:30 by cboma-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 5
 # endif
+
+# define MAX_FD 1024
 
 # if (BUFFER_SIZE > 2000)
 #  undef BUFFER_SIZE

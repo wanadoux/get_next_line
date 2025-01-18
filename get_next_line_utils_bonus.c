@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cboma-ya <cboma-ya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/28 05:05:10 by cboma-ya          #+#    #+#             */
-/*   Updated: 2024/08/15 07:29:48 by cboma-ya         ###   ########.fr       */
+/*   Created: 2024/08/15 14:13:27 by cboma-ya          #+#    #+#             */
+/*   Updated: 2024/08/15 14:13:55 by cboma-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_strcpy_nl(char *str)
 {

@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cboma-ya <cboma-ya@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/13 16:30:51 by cboma-ya          #+#    #+#             */
-/*   Updated: 2024/08/15 14:01:25 by cboma-ya         ###   ########.fr       */
+/*   Created: 2024/08/15 14:09:01 by cboma-ya          #+#    #+#             */
+/*   Updated: 2024/08/15 14:13:07 by cboma-ya         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 void	reinit_buff(char *buff)
 {
@@ -54,13 +54,13 @@ char	*read_get_line(int fd, char *line, char *buffer)
 char	*get_next_line(int fd)
 {
 	char		*line;
-	static char	buffer[BUFFER_SIZE + 1];
+	static char	buffer[MAX_FD][BUFFER_SIZE + 1];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	line = ft_strcpy_nl(buffer);
-	reinit_buff(buffer);
-	line = read_get_line(fd, line, buffer);
+	line = ft_strcpy_nl(buffer[fd]);
+	reinit_buff(buffer[fd]);
+	line = read_get_line(fd, line, buffer[fd]);
 	if (!line)
 		return (NULL);
 	return (line);
